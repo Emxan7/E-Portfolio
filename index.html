@@ -13,51 +13,296 @@
 <body>
   <canvas id="particle-field" aria-hidden="true"></canvas>
   <div class="noise" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Eman Alansari home"><span>EA</span><i></i></a>
+    <a class="brand" href="#top" aria-label="Eman Alansari home">
+      <span>EA</span><i></i>
+    </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#work">work</a><a href="#about">about</a><a href="#skills">stack</a><a href="#contact">contact</a>
+      <a href="#work">work</a>
+      <a href="#about">about</a>
+      <a href="#skills">stack</a>
+      <a href="#contact">contact</a>
     </nav>
-    <a class="header-link" href="assets/cv.pdf" download>download CV <span>↗</span></a>
+    <a class="header-link" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">
+      view CV <span>↗</span>
+    </a>
   </header>
 
   <main id="top">
+    <!-- Hero -->
     <section class="hero section-wrap">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> available for new opportunities · Bahrain</p>
-        <h1>I build useful<br><em>things</em> with code<span class="cursor">_</span></h1>
-        <p class="hero-intro">I’m Eman — a software developer and Business Informatics graduate who likes turning messy workflows into clear, reliable digital experiences.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#work">See my work <span>↓</span></a><a class="text-link" href="#contact">Let’s talk <span>↗</span></a></div>
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          available for new opportunities · Bahrain
+        </p>
+        <h1>
+          I build useful<br>
+          <em>things</em> with code<span class="cursor">_</span>
+        </h1>
+        <p class="hero-intro">
+          I’m Eman — a software developer and Business Informatics graduate who likes turning messy workflows into clear, reliable digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">
+            See my work <span>↓</span>
+          </a>
+          <a class="text-link" href="#contact">
+            Let’s talk <span>↗</span>
+          </a>
+        </div>
       </div>
+
       <div class="hero-art reveal delay-2" aria-label="Animated EA avatar">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="avatar-card"><div class="avatar-aura"></div><div class="avatar" role="img" aria-label="Eman Alansari avatar with waving hand"><div class="avatar-halo"></div><span class="avatar-initials">EA</span><span class="wave-hand">✋</span></div><span class="avatar-caption">hello, I’m Eman <b>✦</b></span></div>
-        <span class="float-note note-one">C# / .NET</span><span class="float-note note-two">ideas → reality</span>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="avatar-card">
+          <div class="avatar-aura"></div>
+          <div class="avatar" role="img" aria-label="Eman Alansari avatar with waving hand">
+            <div class="avatar-halo"></div>
+            <span class="avatar-initials">EA</span>
+            <span class="wave-hand">✋</span>
+          </div>
+          <span class="avatar-caption">hello, I’m Eman <b>✦</b></span>
+        </div>
+        <span class="float-note note-one">C# / .NET</span>
+        <span class="float-note note-two">ideas → reality</span>
       </div>
-      <div class="scroll-cue"><span></span> scroll to explore</div>
+
+      <div class="scroll-cue">
+        <span></span> scroll to explore
+      </div>
     </section>
 
+    <!-- Work -->
     <section id="work" class="section-wrap work-section">
-      <div class="section-heading reveal"><p class="eyebrow">01 / selected work</p><h2>A few things I’ve<br><em>made & improved.</em></h2><p class="section-note">From banking automation to small Flutter experiments — I learn by making.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-featured reveal" data-project="projects/iban-qr.html" tabindex="0" role="link" aria-label="Open IBAN QR Code app project"><div class="project-visual visual-iban"><img src="assets/iban-qr.svg" alt="Abstract placeholder for IBAN QR application"><span class="project-index">01</span></div><div class="project-meta"><div><p class="project-type">banking · C# / .NET</p><h3>IBAN QR Code app</h3></div><span class="arrow">↗</span></div><p class="project-desc">An internal desktop tool that generates Bahraini IBANs and QR codes, then creates PDF reports and handles email delivery.</p><div class="tags"><span>C#</span><span>PDF automation</span><span>QR</span></div></article>
-        <article class="project-card reveal delay-1" data-project="projects/bhibor.html" tabindex="0" role="link" aria-label="Open BHIBOR Rate Service project"><div class="project-visual visual-rate"><img src="assets/bhibor.svg" alt="Abstract placeholder for BHIBOR Windows Service"><span class="project-index">02</span></div><div class="project-meta"><div><p class="project-type">automation · C#</p><h3>BHIBOR Rate Service</h3></div><span class="arrow">↗</span></div><p class="project-desc">A Windows Service that collects and distributes daily interbank rates consistently, replacing repetitive manual reporting.</p><div class="tags"><span>Windows Service</span><span>Scheduling</span></div></article>
-        <article class="project-card reveal delay-2" data-project="projects/mood-tracker.html" tabindex="0" role="link" aria-label="Open Mood Tracker project"><div class="project-visual visual-mood"><img src="assets/mood-tracker.svg" alt="Abstract placeholder for Mood Tracker app"><span class="project-index">03</span></div><div class="project-meta"><div><p class="project-type">university project · Flutter</p><h3>Mood Tracker</h3></div><span class="arrow">↗</span></div><p class="project-desc">A small mobile space for logging feelings and noticing patterns — built to make self-reflection feel simple.</p><div class="tags"><span>Flutter</span><span>Dart</span><span>Mobile UI</span></div></article>
-        <article class="project-card project-wide reveal" data-project="projects/mobile-game.html" tabindex="0" role="link" aria-label="Open Simple mobile game project"><div class="project-visual visual-game"><img src="assets/mobile-game.svg" alt="Abstract placeholder for mobile game"><span class="project-index">04</span></div><div class="project-meta"><div><p class="project-type">university project · Flutter</p><h3>Simple mobile game</h3></div><span class="arrow">↗</span></div><p class="project-desc">A playful Flutter build exploring interactions, state, and the joy of making a tiny game loop work.</p><div class="tags"><span>Flutter</span><span>Dart</span><span>Interaction</span></div></article>
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / selected work</p>
+        <h2>A few things I’ve<br><em>made & improved.</em></h2>
+        <p class="section-note">
+          From banking automation to small Flutter experiments — I learn by making.
+        </p>
       </div>
-      <a class="github-strip reveal" href="https://github.com/Emxan7" target="_blank" rel="noreferrer"><span class="github-mark">⌁</span><span><b>More experiments on GitHub</b><small>Open source HTML / CSS projects & ongoing learning</small></span><span class="strip-arrow">↗</span></a>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal" data-project="projects/iban-qr.html" tabindex="0" role="link" aria-label="Open IBAN QR Code app project">
+          <div class="project-visual visual-iban">
+            <img src="assets/iban-qr.svg" alt="Abstract placeholder for IBAN QR application">
+            <span class="project-index">01</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <p class="project-type">banking · C# / .NET</p>
+              <h3>IBAN QR Code app</h3>
+            </div>
+            <span class="arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            An internal desktop tool that generates Bahraini IBANs and QR codes, then creates PDF reports and handles email delivery.
+          </p>
+          <div class="tags">
+            <span>C#</span>
+            <span>PDF automation</span>
+            <span>QR</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1" data-project="projects/bhibor.html" tabindex="0" role="link" aria-label="Open BHIBOR Rate Service project">
+          <div class="project-visual visual-rate">
+            <img src="assets/bhibor.svg" alt="Abstract placeholder for BHIBOR Windows Service">
+            <span class="project-index">02</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <p class="project-type">automation · C#</p>
+              <h3>BHIBOR Rate Service</h3>
+            </div>
+            <span class="arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            A Windows Service that collects and distributes daily interbank rates consistently, replacing repetitive manual reporting.
+          </p>
+          <div class="tags">
+            <span>Windows Service</span>
+            <span>Scheduling</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-project="projects/mood-tracker.html" tabindex="0" role="link" aria-label="Open Mood Tracker project">
+          <div class="project-visual visual-mood">
+            <img src="assets/mood-tracker.svg" alt="Abstract placeholder for Mood Tracker app">
+            <span class="project-index">03</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <p class="project-type">university project · Flutter</p>
+              <h3>Mood Tracker</h3>
+            </div>
+            <span class="arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            A small mobile space for logging feelings and noticing patterns — built to make self-reflection feel simple.
+          </p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Mobile UI</span>
+          </div>
+        </article>
+
+        <article class="project-card project-wide reveal" data-project="projects/mobile-game.html" tabindex="0" role="link" aria-label="Open Simple mobile game project">
+          <div class="project-visual visual-game">
+            <img src="assets/mobile-game.svg" alt="Abstract placeholder for mobile game">
+            <span class="project-index">04</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <p class="project-type">university project · Flutter</p>
+              <h3>Simple mobile game</h3>
+            </div>
+            <span class="arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            A playful Flutter build exploring interactions, state, and the joy of making a tiny game loop work.
+          </p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Interaction</span>
+          </div>
+        </article>
+      </div>
+
+      <a class="github-strip reveal" href="https://github.com/Emxan7" target="_blank" rel="noreferrer">
+        <span class="github-mark">⌁</span>
+        <span>
+          <b>More experiments on GitHub</b>
+          <small>Open source HTML / CSS projects & ongoing learning</small>
+        </span>
+        <span class="strip-arrow">↗</span>
+      </a>
     </section>
 
+    <!-- About -->
     <section id="about" class="about-section section-wrap">
-      <div class="section-heading reveal"><p class="eyebrow">02 / a little context</p><h2>Curious by default.<br><em>Practical by nature.</em></h2></div>
-      <div class="about-layout"><div class="about-copy reveal"><p>I’m a Business Informatics graduate from the University of Technology Bahrain. I enjoy sitting at the intersection of technology, people, and the systems that connect them.</p><p>During my time at Ithmaar Bank, I worked on real internal tools — from a C# application for Bahraini IBANs and QR codes to a BHIBOR Windows Service. That experience taught me to care about the unglamorous details: clear documentation, dependable automation, and making a workflow easier for the person using it.</p><p>When I’m not building, I’m usually learning something new, sketching an interface, or finding a better way to explain a complicated thing.</p><a class="text-link" href="assets/cv.pdf" download>Read my full CV <span>↓</span></a></div><div class="facts-card reveal delay-1"><div class="fact"><span>based in</span><b>Isa Town, Bahrain</b></div><div class="fact"><span>education</span><b>BSc Business Informatics<br><small>University of Technology Bahrain · GPA 3.69/4</small></b></div><div class="fact"><span>languages</span><b>Arabic + English<br><small>fluent</small></b></div><div class="fact"><span>currently</span><b>building, learning,<br>and looking ahead ✦</b></div></div></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / a little context</p>
+        <h2>Curious by default.<br><em>Practical by nature.</em></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p>
+            I’m a Business Informatics graduate from the University of Technology Bahrain. I enjoy sitting at the intersection of technology, people, and the systems that connect them.
+          </p>
+          <p>
+            During my time at Ithmaar Bank, I worked on real internal tools — from a C# application for Bahraini IBANs and QR codes to a BHIBOR Windows Service. That experience taught me to care about the unglamorous details: clear documentation, dependable automation, and making a workflow easier for the person using it.
+          </p>
+          <p>
+            When I’m not building, I’m usually learning something new, sketching an interface, or finding a better way to explain a complicated thing.
+          </p>
+          <a class="text-link" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">
+            Read my full CV <span>↗</span>
+          </a>
+        </div>
+
+        <div class="facts-card reveal delay-1">
+          <div class="fact">
+            <span>based in</span>
+            <b>Isa Town, Bahrain</b>
+          </div>
+          <div class="fact">
+            <span>education</span>
+            <b>
+              BSc Business Informatics<br>
+              <small>University of Technology Bahrain · GPA 3.69/4</small>
+            </b>
+          </div>
+          <div class="fact">
+            <span>languages</span>
+            <b>
+              Arabic + English<br>
+              <small>fluent</small>
+            </b>
+          </div>
+          <div class="fact">
+            <span>currently</span>
+            <b>building, learning,<br>and looking ahead ✦</b>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="skills-section section-wrap"><div class="section-heading reveal"><p class="eyebrow">03 / toolbox</p><h2>My current<br><em>working stack.</em></h2></div><div class="skill-cloud reveal delay-1"><span class="skill large">C# / .NET</span><span class="skill lilac">HTML · CSS · JavaScript</span><span class="skill">Flutter / Dart</span><span class="skill outline">Power BI</span><span class="skill">SQL</span><span class="skill lilac large">Python</span><span class="skill">Java</span><span class="skill outline">Figma</span><span class="skill">PHP</span><span class="skill lilac">C++</span><span class="skill">SAP</span><span class="skill outline">Excel</span><span class="skill">Visual Studio</span><span class="skill lilac">VS Code</span></div><div class="certs reveal"><p class="eyebrow">certifications & courses</p><div class="cert-list"><span>Microsoft Power BI Data Analyst <b>2025</b></span><span>Generative AI: Cybersecurity & Privacy for Leaders <b>2025</b></span><span>Cisco Certified Network Associate (CCNA) <b>2026</b></span><span>Introduction to AI with Python · Harvard</span><span>Introduction to Cybersecurity · Harvard</span></div></div></section>
+    <!-- Skills -->
+    <section id="skills" class="skills-section section-wrap">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / toolbox</p>
+        <h2>My current<br><em>working stack.</em></h2>
+      </div>
 
-    <section id="contact" class="contact-section section-wrap"><div class="contact-orb">✦</div><div class="reveal"><p class="eyebrow">04 / your turn</p><h2>Have a problem<br>worth <em>solving?</em></h2><p class="contact-lede">I’d love to hear what you’re working on. Drop me a line and let’s see where a good conversation goes.</p><a class="button button-primary" href="mailto:ealansari30@gmail.com">Say hello <span>↗</span></a></div><div class="contact-details reveal delay-1"><a href="mailto:ealansari30@gmail.com">ealansari30@gmail.com</a><a href="tel:+97339400981">+973 3940 0981</a><a href="https://www.linkedin.com/in/eman-alansari/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3d5OzC82TE6qd9Ip3jmRxg%3D%3D" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Emxan7" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
+      <div class="skill-cloud reveal delay-1">
+        <span class="skill large">C# / .NET</span>
+        <span class="skill lilac">HTML · CSS · JavaScript</span>
+        <span class="skill">Flutter / Dart</span>
+        <span class="skill outline">Power BI</span>
+        <span class="skill">SQL</span>
+        <span class="skill lilac large">Python</span>
+        <span class="skill">Java</span>
+        <span class="skill outline">Figma</span>
+        <span class="skill">PHP</span>
+        <span class="skill lilac">C++</span>
+        <span class="skill">SAP</span>
+        <span class="skill outline">Excel</span>
+        <span class="skill">Visual Studio</span>
+        <span class="skill lilac">VS Code</span>
+      </div>
+
+      <div class="certs reveal">
+        <p class="eyebrow">certifications & courses</p>
+        <div class="cert-list">
+          <span>Microsoft Power BI Data Analyst <b>2025</b></span>
+          <span>Generative AI: Cybersecurity & Privacy for Leaders <b>2025</b></span>
+          <span>Cisco Certified Network Associate (CCNA) <b>2026</b></span>
+          <span>Introduction to AI with Python · Harvard</span>
+          <span>Introduction to Cybersecurity · Harvard</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section section-wrap">
+      <div class="contact-orb">✦</div>
+      <div class="reveal">
+        <p class="eyebrow">04 / your turn</p>
+        <h2>Have a problem<br>worth <em>solving?</em></h2>
+        <p class="contact-lede">
+          I’d love to hear what you’re working on. Drop me a line and let’s see where a good conversation goes.
+        </p>
+        <a class="button button-primary" href="mailto:ealansari30@gmail.com">
+          Say hello <span>↗</span>
+        </a>
+      </div>
+
+      <div class="contact-details reveal delay-1">
+        <a href="mailto:ealansari30@gmail.com">ealansari30@gmail.com</a>
+        <a href="tel:+97339400981">+973 3940 0981</a>
+        <a href="https://www.linkedin.com/in/eman-alansari/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3d5OzC82TE6qd9Ip3jmRxg%3D%3D" target="_blank" rel="noreferrer">
+          LinkedIn ↗
+        </a>
+        <a href="https://github.com/Emxan7" target="_blank" rel="noreferrer">
+          GitHub ↗
+        </a>
+      </div>
+    </section>
   </main>
-  <footer class="footer section-wrap"><span>© 2026 Eman Alansari</span><span>made with curiosity <b>✦</b> in Bahrain</span><a href="#top">back to top ↑</a></footer>
+
+  <footer class="footer section-wrap">
+    <span>© 2026 Eman Alansari</span>
+    <span>made with curiosity <b>✦</b> in Bahrain</span>
+    <a href="#top">back to top ↑</a>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
