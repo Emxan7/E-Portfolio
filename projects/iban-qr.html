@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An internal desktop tool that generates Bahraini IBANs and QR codes, then creates PDF reports and handles email delivery.">
+  <title>IBAN QR Code app · Eman Alansari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <canvas id="particle-field" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html#top" aria-label="Eman Alansari home">
+      <span>EA</span>
+      <i></i>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html#work">work</a>
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#skills">stack</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+    <a class="header-link" href="../assets/cv.pdf" download>download CV <span>↗</span></a>
+  </header>
+
+  <main class="page-main section-wrap project-page">
+    <a class="back-link" href="../index.html#work">← back to selected work</a>
+
+    <section class="project-hero">
+      <div class="reveal">
+        <p class="project-kicker">banking · C# / .NET</p>
+        <h1>IBAN QR Code app</h1>
+        <p class="project-summary">An internal desktop tool that generates Bahraini IBANs and QR codes, then creates PDF reports and handles email delivery.</p>
+      </div>
+      <div class="project-art reveal delay-1">
+        <img src="../assets/iban-qr.svg" alt="Abstract visual for IBAN QR Code app">
+      </div>
+    </section>
+
+    <section class="detail-grid">
+      <div class="detail-copy reveal">
+        <h2>The brief</h2>
+        <p>This project is an add-on to the bank’s e-services. Customers enter their account number, choose from their linked accounts, and generate an IBAN QR code for easy pay and transfers. The tool can export the result as a PDF, print it, or send it by email so sharing account details is faster and more consistent.</p>
+
+        <h2>What I worked on</h2>
+        <p>I focused on the end-to-end flow inside e-services: account selection, IBAN QR generation, and delivery options (PDF, print, and email) so users can transfer more easily without manual copy-paste of banking details.</p>
+
+        <div class="project-gallery iban-gallery">
+          <img src="../assets/projects/iban-start.png" alt="IBAN QR – start screen">
+          <img src="../assets/projects/iban-otp.png" alt="IBAN QR – verification">
+          <img src="../assets/projects/iban-form.png" alt="IBAN QR – form">
+          <img src="../assets/projects/iban-qr-result.png" alt="IBAN QR – QR result">
+        </div>
+      </div>
+
+      <aside class="detail-facts reveal delay-1">
+        <div class="detail-fact">
+          <span>role / context</span>
+          <b>Ithmaar Bank · Information Technology Trainee</b>
+        </div>
+        <div class="detail-fact">
+          <span>technology</span>
+          <b>C# / .NET · Windows Forms · PDF · QR</b>
+        </div>
+        <div class="detail-fact">
+          <span>focus</span>
+          <b>workflow automation</b>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap">
+    <span>© 2026 Eman Alansari</span>
+    <span>made with curiosity <b>✦</b> in Bahrain</span>
+    <a href="../index.html#top">back to home ↑</a>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
